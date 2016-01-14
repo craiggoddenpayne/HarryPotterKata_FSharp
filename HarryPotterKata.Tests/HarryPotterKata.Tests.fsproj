@@ -55,6 +55,7 @@
     <Content Include="packages.config" />
     <Compile Include="BookRepositoryTests.fs" />
     <Compile Include="PricingCalculatorTests.fs" />
+    <Compile Include="DiscountRepositoryTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Moq">

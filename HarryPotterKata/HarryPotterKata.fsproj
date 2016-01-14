@@ -47,6 +47,7 @@
     <Compile Include="Book.fs" />
     <Compile Include="BookRepository.fs" />
     <Compile Include="PricingCalculator.fs" />
+    <Compile Include="DiscountRepository.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

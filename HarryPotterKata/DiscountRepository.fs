@@ -2,4 +2,5 @@
 
 type DiscountRepository() = 
     member x.GetDiscountFor bookCount = 
-        0
+        if bookCount = 2 then 5
+        else 0
