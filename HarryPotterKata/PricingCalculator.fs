@@ -1,6 +1,7 @@
 ﻿namespace HarryPotterKata
 
-type PricingCalculator() =
+type PricingCalculator(discountRepository: DiscountRepository) =
+    let discountRepository = discountRepository
 
     member x.SingleBookCost = 8
 

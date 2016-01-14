@@ -4,7 +4,8 @@ open HarryPotterKata
 open Moq
 
 type PricingCalculatorTests() = 
-    let calculator = new PricingCalculator()
+    let discountRepository = Mock.Of<DiscountRepository>()
+    let calculator = new PricingCalculator(discountRepository)
 
     [<Test>]
     member this.WhenCallingGetPriceWithOneBookItShouldBe8() = 
