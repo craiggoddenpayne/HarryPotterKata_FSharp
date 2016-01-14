@@ -17,3 +17,7 @@ type PricingCalculatorTests() =
         let books = [new Book("Mock1");new Book("Mock2")]
         let result = calculator.GetPrice(books)
         Assert.That(result, Is.EqualTo 16)
+
+    [<Test>]
+    member this.SingleCostOfABookIs8() = 
+        Assert.That(calculator.SingleBookCost, Is.EqualTo 8)
