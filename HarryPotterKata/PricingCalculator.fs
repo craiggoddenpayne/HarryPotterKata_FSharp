@@ -6,6 +6,6 @@ type PricingCalculator() =
 
     member x.GetPrice (books : List<Book>) =
         if books.Length = 1 
-        then 8
+        then x.SingleBookCost
         else 
         0 
