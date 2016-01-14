@@ -51,7 +51,7 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Library1.fs" />
+    <Compile Include="BookTests.fs" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +70,13 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HarryPotterKata\HarryPotterKata.fsproj">
+      <Name>HarryPotterKata</Name>
+      <Project>{75a4eb71-2843-4489-92bf-8375a014e64e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
