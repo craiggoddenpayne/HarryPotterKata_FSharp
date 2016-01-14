@@ -7,6 +7,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HarryPotterKata", "HarryPot
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HarryPotterKata.Tests", "HarryPotterKata.Tests\HarryPotterKata.Tests.fsproj", "{4BC0BDAB-6BDF-465C-B72D-A3154560C825}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{C705AEDC-658C-4491-9194-63B551A8DC9E}"
+	ProjectSection(SolutionItems) = preProject
+		HarryPotterKata.md = HarryPotterKata.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
