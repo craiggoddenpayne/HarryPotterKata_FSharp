@@ -8,6 +8,6 @@ type PricingCalculatorTests() =
 
     [<Test>]
     member this.WhenCallingGetPriceWithOneBookItShouldBe8() = 
-        let book = [Mock.Of<Book>()]
+        let book = [new Book("Mock")]
         let result = calculator.GetPrice(book)
         Assert.That(result, Is.EqualTo 8)
