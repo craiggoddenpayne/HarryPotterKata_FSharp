@@ -13,6 +13,7 @@ type PricingCalculator(discountRepository: DiscountRepository) =
             count
         }
 
+        let discount = discountRepository.GetDiscountFor(bookGroups)
         if bookGroups = 2 
         then 15.2
         else

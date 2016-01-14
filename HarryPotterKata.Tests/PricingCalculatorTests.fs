@@ -28,3 +28,11 @@ type PricingCalculatorTests() =
     [<Test>]
     member this.SingleCostOfABookIs8() = 
         Assert.That(calculator.SingleBookCost, Is.EqualTo 8)
+
+    [<Test>]
+    member this.WhenCallingGetPriceItShouldGetDiscount() = 
+        Mock.Get(discountRepository).Setup(fun x -> x.GetDiscountFor 1) |> ignore
+
+        let books = [new Book("Mock1")]
+        let price = calculator.GetPrice(books)
+        Mock.Get(discountRepository).Verify(fun x -> x.GetDiscountFor(1))
